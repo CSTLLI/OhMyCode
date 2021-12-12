@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%; /* 1rem vaut 10px */
+}
+
+body{
+	font-size: 1.4rem;
+	font-family: arial;
+	color: white;
+}
+
+.banniere-titre{
+    margin-bottom: 1rem;
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #2C3C54;
+	text-align: center;
+}
+
+.container-change{
+	background-color: #CBE6ff;
+}
+
+.switch{
+	width: 90px;
+	height: 30px;
+	background-color: #1E2939;
+	border-radius: 15px;
+	position: relative;
+	border: 1px solid #1E2939;
+
+}
+
+.switch i{
+	position: absolute;
+	color: #FFD363;
+	top: 6px;
+	right: 23px;
+}
+
+.switch-change{
+	background-color: #61b3ff;
+	border: 1px solid #61b3ff;
+}
+
+.btn{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+}
+
+.btn-change{
+	right: -1px;
+	left: auto;
+}
+
+.btn-police{
+	margin-top: 10px;
+	display: flex;
+}
+
+.btn-moins, .btn-plus{
+	width: 60px;
+	height: 30px;
+	background-color: #1E2939;
+	border-radius: 10px;
+	font-weight: bold;
+	margin-right: 10px;
+	display: grid;
+	align-items: center;
+}
+
+.btn-def-change{
+	background-color: #61b3ff;
+	border: 1px solid #61b3ff;
+}
+
+.icone-change{
+	left: 20px;
+}

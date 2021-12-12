@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%; /* 1rem vaut 10px */
+}
+
+body{
+	font-size: 1.4rem;
+	font-family: arial;
+	color: white;
+	height: 100vh;
+	/* display: flex; */
+	/* justify-content: center; */
+	text-align: center;
+	background-color: #1E2337;
+}
+
+#btn-red{
+	background-color: red;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+	animation-name: moveOn;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#btn-blue{
+	background-color: blue;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+	animation-name: moveOn;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes moveOn{
+	0% {left: 0px; top:0px;}
+	25% {left: 200px; top:0px;}
+	50% {left: 200px; top:200px}
+	75% {left: 0px; top:200px;}
+	100% {left: 0px; top:0px}
+}
