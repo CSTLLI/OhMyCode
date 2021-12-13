@@ -1,10 +1,13 @@
+// ### Test de liaison avec la page HTML
 console.log('connecté !');
-
+ 
+// ### Définition des variables
 const modal = document.querySelector('.modal-container');
 const btn = document.querySelector('.btn-success');
 const icone = document.querySelector('.fa-times');
 const code = document.querySelector('.code');
 
+// ### Fonctions
 function displayModal(){
 	let hauteur = document.documentElement.scrollTop;
 	if (hauteur > 400){
@@ -12,6 +15,7 @@ function displayModal(){
 	}
 }
 
+// ### Evénèments
 window.addEventListener('scroll', displayModal);
 
 btn.addEventListener('click', function(){
