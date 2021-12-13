@@ -1,5 +1,7 @@
+// ### Test de liaison avec la page HTML
 console.log('connecté !');
 
+// ### Définition des variables
 const body = document.querySelector('.body');
 const switchBox = document.querySelector('.switch');
 const btn = document.querySelector('.btn');
@@ -10,6 +12,7 @@ const titre = document.querySelector('.title');
 const btnPlus = document.querySelector('.btn-plus');
 const btnMoins = document.querySelector('.btn-moins');
 
+// ### Evénèments 
 switchBox.addEventListener('click', function(){
 	btn.classList.toggle('btn-change');
 
