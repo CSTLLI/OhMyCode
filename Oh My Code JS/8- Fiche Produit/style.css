@@ -1,0 +1,115 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;501;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%; /* 1rem vaut 10px */
+}
+
+body{
+	font-size: 1.4rem;
+	font-family: 'Quicksand';
+	color: white;
+}
+
+/* DIV CONTAINER */
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #1E2337;
+}
+
+.produit-container{
+	width: 80%;
+	background-color: white;
+	color: grey;
+	border-radius: 10px;
+	display: flex;
+}
+
+.produit-images{
+	flex: 1;
+}
+
+.produit-infos{
+	flex: 1;
+	padding: 2rem;
+}
+
+h1.produit-titre{
+	font-size: 4rem;
+}
+
+p.produit-prix{
+	font-size: 3rem;
+	margin: 2rem 0;
+}
+
+.full-img-container{
+	height: 350px;
+	overflow: hidden;
+	border-radius: 10px 0;
+}
+
+#full{
+	max-width: 100%;
+}
+
+.small{
+	flex: 1;
+	width: 30%;
+	margin: 1rem;
+	border-radius: 10px;
+}
+
+.vignettes-container{
+	display: flex;
+}
+
+p.description{
+	font-size: 2rem;
+	text-align: justify;
+}
+
+button.btn-add{
+	background-color: black;
+	color: white;
+	padding: 2rem;
+	outline: none;
+	border: none;
+	margin: 2rem 0;
+}
+
+@media screen and (max-width: 800px){
+	.container{
+		height: auto;
+	}
+
+	.produit-container{
+		flex-direction: column;
+	}
+
+	.full-img-container{
+		height: auto;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.vignettes-container{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.small{
+		width: 50%;
+	}
+}
