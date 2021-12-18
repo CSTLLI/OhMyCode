@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;501;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%; /* 1rem vaut 10px */
+}
+
+body{
+	font-size: 1.4rem;
+	font-family: 'Quicksand';
+	color: white;
+}
+
+/* DIV CONTAINER */
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #1E2337;
+}
+
+#todo-list{
+	margin-top: 10px;
+	border-radius: 10px;
+	width: 50%;
+	padding: 4rem;
+	color: #1E2337;
+	background-color: white;
+
+}
+
+#form{
+	display: flex;
+}
+
+#todo{
+	width: 100%;
+	color: rgb(44, 43, 43);
+	font-size: 2rem;
+	border: 1px dashed rgb(105,19,105);
+	border-width: 0px 0px 1px 0px;
+}
+
+#addBouton{
+	padding: 10px;
+	background-color: #EFEFEF;
+	color: black;
+}
+
+button{
+	border: none;
+	width: 4rem;
+	height: 4rem;
+}
+
+.item{
+	text-align: justify;
+	margin: 1rem;
+	background-color: white;
+	font-size: 2rem;
+	color: rgb(105,19,105);
+	display: flex;
+	align-items: center;
+}
+
+.item p{
+	flex: 1;
+	padding: 2rem;
+}
+.item button{
+	font-size: 2rem;
+	margin: 1rem;
+}
+.item button.btn-archive{
+	background-color: rgb(128, 205, 128);
+	font-size: 2rem;
+}
+.item button.btn-delete{
+	background-color: rgb(188,102,102);
+	font-size: 2rem;
+}
+
+.line{
+	background-color: yellow;
+}
