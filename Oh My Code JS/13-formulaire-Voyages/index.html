@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!-- Métadonnées -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Liens externes -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- Titre du site -->
+	<title>Formulaire de voyage</title>
+</head>
+
+<!-- Contenu du site -->
+<body>
+	<div class="container">
+		<div class="banniere-titre">
+			<h1>FORMULAIRE DE VOYAGE</h1>
+		</div>
+
+		<form id="form">
+			<!-- Destinations -->
+			<div class="field">
+				<select id="pays">
+					<option value="Hawai">Hawai</option>
+					<option value="Maldives">Maldives</option>
+					<option value="Bahamas">Bahamas</option>
+					<option value="Borabora">Borabora</option>
+					<option value="Tahiti">Tahiti</option>
+				</select>
+			</div>
+			<!-- Date Aller -->
+			<div class="field">
+				<input type="date" id="start" value="2021-12-18" min="2021-12-18">
+			</div>
+			<!-- Date Retour -->
+			<div class="field">
+				<input type="date" id="end" value="2021-12-18" min="2021-12-18">
+			</div>
+			<button type="submit">
+				<i class="fas fa-plane"></i>
+			</button>
+		</form>
+
+		<div class="liste-resultats">
+		</div>
+	</div>
+	
+	<!-- Ajout du script -->
+	<script src="script.js"></script>
+</body>
+</html>
